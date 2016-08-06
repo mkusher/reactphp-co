@@ -1,0 +1,23 @@
+{
+    "name": "mkusher/react-co",
+    "description": "Simple reactphp coroutines",
+    "require": {
+        "react/promise": "^2.4"
+    },
+    "autoload":{
+        "files": [
+            "lib/functions.php"
+        ]
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aleh Kashnikau",
+            "email": "aleh.kashnikau@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "react/filesystem": "dev-master",
+        "webmozart/assert": "^1.0"
+    }
+}
