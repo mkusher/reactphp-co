@@ -1,5 +1,6 @@
 Reactphp Co
 ===========
+[![Build Status](https://travis-ci.org/mkusher/reactphp-co.svg?branch=master)](https://travis-ci.org/mkusher/reactphp-co)
 
 Simple coroutines for your reactphp applications.
 
