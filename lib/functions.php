@@ -44,7 +44,11 @@ function waitResult(Generator $gen, $result) {
 
 function getGeneratorResult(Generator $gen, $lastPromiseResult) {
     try {
-        return $gen->getReturn();
+        if (method_exists($gen, "getReturn")) {
+            return $gen->getReturn();
+        } else {
+            return $lastPromiseResult;
+        }
     } catch (Exception $e) {
         return $lastPromiseResult;
     }
